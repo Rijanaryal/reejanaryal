@@ -1,0 +1,89 @@
+%PDF-1.4
+%PortfolioResume
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 4541 >>
+stream
+0.055 0.11 0.19 rg 0 682 595 160 re f
+1 1 1 rg BT /F2 26 Tf 1 0 0 1 44 794 Tm (RIJAN ARYAL) Tj ET
+0.78 0.88 0.93 rg BT /F2 10 Tf 1 0 0 1 44 766 Tm (BSc CSIT STUDENT  |  WEB DEVELOPER  |  ASPIRING SOFTWARE DEVELOPER) Tj ET
+1 1 1 rg BT /F1 9.5 Tf 1 0 0 1 44 738 Tm (Kathmandu, Nepal  |  aryalreejan87@gmail.com) Tj ET
+1 1 1 rg BT /F1 9.5 Tf 1 0 0 1 44 718 Tm (github.com/Rijanaryal  |  linkedin.com/in/rijan-aryal-1162163a8) Tj ET
+0.055 0.11 0.19 rg BT /F2 10 Tf 1 0 0 1 44 660 Tm (PROFILE) Tj ET
+0.72 0.78 0.81 RG 0.7 w 44 654 m 551 654 l S
+0.30 0.35 0.40 rg BT /F1 9 Tf 1 0 0 1 44 640 Tm (BSc CSIT student at ASCOL with a strong foundation in web development and programming.) Tj ET
+0.30 0.35 0.40 rg BT /F1 9 Tf 1 0 0 1 44 627 Tm (I enjoy building practical projects, learning new technologies, and creating usable digital products.) Tj ET
+0.055 0.11 0.19 rg BT /F2 10 Tf 1 0 0 1 44 603 Tm (EDUCATION) Tj ET
+0.72 0.78 0.81 RG 0.7 w 44 597 m 551 597 l S
+0.12 0.16 0.21 rg BT /F2 9.2 Tf 1 0 0 1 44 583 Tm (BSc CSIT | Amrit Science Campus \(ASCOL\), Tribhuvan University | 2026-Present) Tj ET
+0.30 0.35 0.40 rg BT /F1 8.7 Tf 1 0 0 1 44 570 Tm (Currently studying) Tj ET
+0.12 0.16 0.21 rg BT /F2 9.2 Tf 1 0 0 1 44 552 Tm (Grade XII - Science \(Computer Science\) | NIST College, Kathmandu) Tj ET
+0.30 0.35 0.40 rg BT /F1 8.7 Tf 1 0 0 1 44 539 Tm (NEB GPA: 3.74 | CSIT entrance rank: 580) Tj ET
+0.055 0.11 0.19 rg BT /F2 10 Tf 1 0 0 1 44 515 Tm (TECHNICAL SKILLS) Tj ET
+0.72 0.78 0.81 RG 0.7 w 44 509 m 551 509 l S
+0.055 0.11 0.19 rg BT /F2 8.5 Tf 1 0 0 1 44 495 Tm (Programming:) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.5 Tf 1 0 0 1 123 495 Tm (JavaScript, C, PHP, Python) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.5 Tf 1 0 0 1 44 482 Tm (Web:) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.5 Tf 1 0 0 1 123 482 Tm (HTML, CSS, React, Next.js, Node.js, Tailwind CSS, Three.js) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.5 Tf 1 0 0 1 44 469 Tm (Database:) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.5 Tf 1 0 0 1 123 469 Tm (MySQL, SQL) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.5 Tf 1 0 0 1 44 456 Tm (Tools:) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.5 Tf 1 0 0 1 123 456 Tm (Git, GitHub, VS Code, Figma) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.5 Tf 1 0 0 1 44 443 Tm (Creative:) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.5 Tf 1 0 0 1 123 443 Tm (UI/UX, basic photo/video editing) Tj ET
+0.055 0.11 0.19 rg BT /F2 10 Tf 1 0 0 1 44 419 Tm (SELECTED PROJECTS) Tj ET
+0.72 0.78 0.81 RG 0.7 w 44 413 m 551 413 l S
+0.055 0.11 0.19 rg BT /F2 8.4 Tf 1 0 0 1 44 399 Tm (Taaja Bazar) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.1 Tf 1 0 0 1 137 399 Tm (Fresh-produce marketplace, designed and built end to end.) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.4 Tf 1 0 0 1 44 381 Tm (ASCOL CSIT Hub) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.1 Tf 1 0 0 1 137 381 Tm (Project site: ascol-csit-hub.vercel.app.) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.4 Tf 1 0 0 1 44 363 Tm (SwaadCup) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.1 Tf 1 0 0 1 137 363 Tm (Web project: swaadcup.netlify.app.) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.4 Tf 1 0 0 1 44 345 Tm (Haat) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.1 Tf 1 0 0 1 137 345 Tm (Web project: haat.netlify.app.) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.4 Tf 1 0 0 1 44 327 Tm (Electro-Bazzar) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.1 Tf 1 0 0 1 137 327 Tm (PHP/MySQL e-commerce-style project using HTML/CSS and XAMPP.) Tj ET
+0.055 0.11 0.19 rg BT /F2 8.4 Tf 1 0 0 1 44 309 Tm (NepalGPT) Tj ET
+0.12 0.16 0.21 rg BT /F1 8.1 Tf 1 0 0 1 137 309 Tm (Nepal-focused AI/chat concept using Python and FastAPI.) Tj ET
+0.055 0.11 0.19 rg BT /F2 10 Tf 1 0 0 1 44 286 Tm (CURRENTLY LEARNING) Tj ET
+0.72 0.78 0.81 RG 0.7 w 44 280 m 551 280 l S
+0.30 0.35 0.40 rg BT /F1 8.7 Tf 1 0 0 1 44 266 Tm (TypeScript, MongoDB, Python fundamentals, data structures and algorithms,) Tj ET
+0.30 0.35 0.40 rg BT /F1 8.7 Tf 1 0 0 1 44 253 Tm (backend development, and Git/GitHub workflow.) Tj ET
+0.055 0.11 0.19 rg BT /F2 10 Tf 1 0 0 1 44 229 Tm (STRENGTHS) Tj ET
+0.72 0.78 0.81 RG 0.7 w 44 223 m 551 223 l S
+0.30 0.35 0.40 rg BT /F1 8.7 Tf 1 0 0 1 44 209 Tm (Curious learner, practical project mindset, creative problem solving, open to feedback,) Tj ET
+0.30 0.35 0.40 rg BT /F1 8.7 Tf 1 0 0 1 44 196 Tm (and comfortable learning independently.) Tj ET
+0.93 0.96 0.97 rg 36 48 523 40 re f
+0.05 0.39 0.53 rg 36 48 4 40 re f
+0.055 0.11 0.19 rg BT /F2 8.2 Tf 1 0 0 1 50 71 Tm (OPEN TO INTERNSHIPS, STUDENT DEVELOPER ROLES, AND PROJECT-BASED OPPORTUNITIES) Tj ET
+0.30 0.35 0.40 rg BT /F1 8.2 Tf 1 0 0 1 50 57 Tm (Interested in web development, practical software projects, and continued learning.) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000026 00000 n 
+0000000075 00000 n 
+0000000132 00000 n 
+0000000268 00000 n 
+0000000338 00000 n 
+0000000413 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+5006
+%%EOF

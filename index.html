@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>RIJAN ARYAL | DEVELOPER</title>
+<meta name="description" content="Rijan Aryal is a BSc CSIT student and web developer from Kathmandu, Nepal. Explore his projects, skills, education, and resume.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23000' stroke='%23ff3030' stroke-width='4'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='20' font-weight='900' fill='%23ff0'%3ERA%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#000;--txt:#fff;--g:#0f0;--p:#f0f;--b:#0ff;--y:#ff0;--r:#ff3030;--main:'Arial Black',Impact,sans-serif;--mono:'Courier New',monospace}
+*{margin:0;padding:0;box-sizing:border-box;cursor:none}
+body{background:var(--bg);color:var(--txt);font-family:var(--mono);overflow-x:hidden;line-height:1.2}
+a{cursor:none}
+.scanlines{position:fixed;inset:0;background:linear-gradient(rgba(18,16,16,0) 50%,rgba(0,0,0,.25) 50%),linear-gradient(90deg,rgba(255,0,0,.06),rgba(0,255,0,.02),rgba(0,0,255,.06));background-size:100% 2px,3px 100%;pointer-events:none;z-index:999}
+.cursor{position:fixed;width:40px;height:40px;border:2px solid var(--g);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1000;mix-blend-mode:difference;transition:width .2s,height .2s}
+.cursor::after{content:'';position:absolute;top:50%;left:50%;width:6px;height:6px;background:var(--g);transform:translate(-50%,-50%)}
+h1,h2{font-family:var(--main);text-transform:uppercase;line-height:.8}
+.glitch-text{font-size:clamp(4rem,15vw,12rem);position:relative;mix-blend-mode:exclusion}
+.glitch-text::before,.glitch-text::after{content:attr(data-text);position:absolute;top:0;left:0;width:100%;height:100%;background:var(--bg)}
+.glitch-text::before{left:2px;text-shadow:-2px 0 var(--p);clip:rect(24px,550px,90px,0);animation:gl2 3s infinite linear alternate-reverse}
+.glitch-text::after{left:-2px;text-shadow:-2px 0 var(--b);clip:rect(85px,550px,140px,0);animation:gl 2.5s infinite linear alternate-reverse}
+@keyframes gl{0%{clip:rect(10px,9999px,30px,0)}20%{clip:rect(80px,9999px,100px,0)}40%{clip:rect(10px,9999px,100px,0)}60%{clip:rect(40px,9999px,60px,0)}80%{clip:rect(20px,9999px,90px,0)}100%{clip:rect(70px,9999px,10px,0)}}
+@keyframes gl2{0%{clip:rect(60px,9999px,80px,0)}25%{clip:rect(5px,9999px,50px,0)}50%{clip:rect(90px,9999px,120px,0)}75%{clip:rect(30px,9999px,70px,0)}100%{clip:rect(50px,9999px,20px,0)}}
+.wrapper{padding:clamp(12px,3vw,28px);max-width:100%;overflow:hidden}
+header{min-height:80vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:35px;border-bottom:10px solid transparent;border-image:repeating-linear-gradient(135deg,var(--y) 0 18px,#000 18px 36px) 10}
+.alert-line{display:inline-block;background:var(--r);color:#000;padding:8px 12px;font-weight:bold;letter-spacing:.12em;transform:skew(-5deg);box-shadow:5px 5px 0 var(--y)}
+.danger-note{color:var(--r);font-weight:bold;letter-spacing:.15em;margin-bottom:20px}
+.sub-hero{font-size:clamp(1rem,2vw,2rem);color:var(--g);background:#000;display:inline-block;padding:10px;margin-top:20px;border:1px solid var(--g);align-self:flex-start}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-action{display:inline-block;padding:12px 18px;border:2px solid var(--y);color:var(--y);font-weight:bold;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.hero-action:first-child{background:var(--y);color:#000}
+.hero-action:hover,.hero-action:focus-visible{background:var(--r);border-color:var(--r);color:#fff;transform:translateY(-3px);outline:2px solid #fff;outline-offset:3px}
+.signal-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.signal-chip{border:1px solid var(--g);padding:7px 10px;color:var(--g);font-size:.85rem;letter-spacing:.08em}
+.tag{color:#000;background:var(--y);padding:5px;text-decoration:none;transition:.2s}
+.tag:hover,.tag:focus-visible{background:var(--r);color:#fff;outline:2px solid #fff;outline-offset:3px}
+.marquee-container{background:var(--p);color:#000;font-family:var(--main);font-size:3rem;padding:20px 0;transform:rotate(-3deg) scale(1.1);width:110vw;margin-left:-5vw;border-top:5px solid #fff;border-bottom:5px solid #fff;margin-top:80px;margin-bottom:100px;overflow:hidden;white-space:nowrap}
+.marquee-inner{display:inline-block;padding-left:100%;animation:mq 18s linear infinite}
+@keyframes mq{to{transform:translateX(-100%)}}
+.grid-chaos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin:clamp(70px,12vw,140px) 0}
+.chaos-box{border:2px solid #fff;padding:50px 40px;position:relative;transition:.2s;overflow:hidden}
+.chaos-box:hover{background:#fff;color:#000}
+.chaos-box:hover .box-title{-webkit-text-stroke:0;color:#000}
+.box-title{font-size:8rem;font-family:var(--main);color:transparent;-webkit-text-stroke:2px #fff;position:absolute;top:-20px;right:-10px;opacity:.5}
+.box-content{position:relative;z-index:1}
+.xp-section{background:var(--b);color:#000;padding:100px 20px;clip-path:polygon(0 5%,100% 0,100% 95%,0 100%);margin:50px 0}
+.xp-card{background:#000;color:var(--b);border:5px solid #000;margin-bottom:30px;padding:30px;box-shadow:15px 15px 0 rgba(0,0,0,.5);transition:.3s}
+.xp-card:hover{transform:translate(-10px,-10px);box-shadow:25px 25px 0 #fff;color:#fff}
+.folder{border:1px solid var(--g);margin:100px 0;padding:5px}
+.folder-tab{background:var(--g);color:#000;display:inline-block;padding:10px 30px;font-weight:bold;font-size:1.5rem}
+.project-item{border-bottom:1px dashed var(--g);padding:40px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.project-item:hover{background:rgba(0,255,0,.1)}
+.project-name{font-size:2.5rem;font-family:var(--main)}
+.project-actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn-wild{background:transparent;border:2px solid var(--g);color:var(--g);padding:15px 30px;font-weight:bold;text-transform:uppercase;text-decoration:none;transition:.2s;display:inline-block}
+.btn-wild:hover{background:var(--g);color:#000;box-shadow:0 0 20px var(--g)}
+.btn-wild:focus-visible{outline:3px solid var(--y);outline-offset:4px}
+.hot{background:var(--y);color:#000}
+.hot .btn-wild{border-color:#000;color:#000}
+.hot .btn-wild:hover{background:#000;color:#fff}
+footer{background:#fff;color:#000;padding:100px 20px;text-align:center}
+.contact-big{position:relative;color:orangered;font-size:clamp(2rem,5vw,5rem);font-family:var(--main);word-break:break-all;line-height:.9;text-decoration:none}
+.contact-big:hover{color:var(--p);text-decoration:line-through}
+.blink{animation:bl 1s linear infinite}
+@keyframes bl{50%{opacity:0}}
+.folder{box-shadow:8px 8px 0 var(--r)}
+.folder-tab{background:repeating-linear-gradient(135deg,var(--y) 0 18px,#000 18px 36px);color:#fff;text-shadow:2px 2px #000}
+.project-item{transition:background .2s,transform .2s}
+.project-item:hover{transform:translateX(6px)}
+.project-item.hot{border-bottom-color:#000}
+.project-item:not(.hot) .project-name{color:var(--y);text-shadow:2px 2px var(--r)}
+.project-preview-panel{display:none;flex-basis:100%;width:100%;border:2px solid var(--y);background:#000;padding:10px}
+.project-item.preview-open .project-preview-panel{display:block}
+.project-preview-panel p{color:var(--y);font-size:.9rem;margin-bottom:8px}
+.project-preview-panel iframe{display:block;width:100%;height:360px;background:#fff;border:1px solid var(--g)}
+.preview-toggle{font:inherit;cursor:pointer}
+.project-item:focus-within{outline:2px solid var(--y);outline-offset:-2px}
+.xp-section{background:var(--r)}
+.xp-card{border-color:var(--y)}
+.xp-card:hover{box-shadow:25px 25px 0 var(--y)}
+footer{border-top:12px solid transparent;border-image:repeating-linear-gradient(135deg,var(--y) 0 18px,#000 18px 36px) 12}
+.resume-section{margin:90px auto;max-width:900px;border:1px solid var(--y);background:linear-gradient(135deg,#101010,#050505);box-shadow:8px 8px 0 var(--r)}
+.resume-kicker{color:var(--y);font-size:.75rem;font-weight:bold;letter-spacing:.18em}
+.resume-title{font:clamp(1.8rem,5vw,2.6rem)/1 var(--main);color:#fff;margin:8px 0}
+.resume-subtitle{color:var(--g);font-size:.95rem}
+.resume-actions{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;margin:0 -26px -26px}
+.resume-actions .btn-wild{border-width:1px;text-align:center}
+.resume-actions .btn-wild:first-child{background:var(--y);color:#000}
+.resume-actions .btn-wild:first-child:hover{background:var(--r);color:#fff;border-color:var(--r)}
+.resume-actions .btn-wild:last-child{border-color:transparent}
+.resume-viewer[hidden]{display:none}
+.resume-viewer{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;padding:16px;background:rgba(0,0,0,.88);backdrop-filter:blur(5px)}
+.resume-viewer-panel{width:min(900px,100%);height:min(760px,90vh);display:flex;flex-direction:column;border:2px solid var(--y);background:#080808;box-shadow:10px 10px 0 var(--r)}
+.resume-viewer-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;color:var(--y);font-weight:bold}
+.resume-viewer-bar button{background:transparent;color:var(--y);border:1px solid var(--y);font:inherit;padding:6px 10px;cursor:pointer}
+.resume-viewer iframe{border:0;background:#fff;width:100%;height:100%;min-height:0}
+.footer-email{display:inline-block;font-size:.95rem;font-family:var(--mono);word-break:break-word;margin:10px 0}
+.chaos-box{border-color:#444;background:linear-gradient(145deg,#111,#050505);color:#fff;transition:border-color .3s,transform .3s,box-shadow .3s}
+.chaos-box:nth-child(2){background:#735b08;color:#fff}
+.chaos-box:nth-child(1):hover,.chaos-box:nth-child(1):focus-within{background-image:linear-gradient(145deg,#7d245f,#41153b)}
+.chaos-box:nth-child(2):hover,.chaos-box:nth-child(2):focus-within{background-image:linear-gradient(145deg,#08784f,#064c45);color:#fff}
+.chaos-box:nth-child(3):hover,.chaos-box:nth-child(3):focus-within{background-image:linear-gradient(145deg,#17598d,#102c59)}
+.chaos-box:hover,.chaos-box:focus-within{color:#fff;border-color:#fff;transform:translateY(-7px);box-shadow:9px 9px 0 var(--r)}
+.chaos-box:hover .box-title,.chaos-box:focus-within .box-title{-webkit-text-stroke:2px #fff;color:transparent;opacity:.55}
+.box-content h2{line-height:1}
+.box-content p,.box-content li{line-height:1.55}
+.box-content ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none!important;margin:20px 0 0!important;padding:0}
+.box-content ul li{background:#171717;border:1px solid #444;color:#fff;padding:7px 10px;font-size:.95rem!important}
+.skill-note{margin-top:16px!important;color:#aaa;font-size:.9rem!important}
+.education-highlight{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:18px}
+.education-highlight span{background:#111;border-left:3px solid var(--y);padding:10px;font-size:.95rem}
+.xp-section{clip-path:none;border:1px solid #572126;box-shadow:10px 10px 0 #290b0e}
+.xp-card{border-width:1px;border-color:#494949;padding:clamp(20px,4vw,32px);box-shadow:none}
+.xp-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #0008;color:var(--b)}
+.xp-card ul{line-height:1.7}
+.xp-card .project-meta{color:#aaa;font-size:.9rem;margin-top:10px}
+.xp-card a{color:var(--y)}
+.folder{border-color:#353535;box-shadow:8px 8px 0 #3b1115}
+.folder-tab{font-size:1.1rem}
+.project-item{border-color:#353535}
+.project-item:not(.hot) .project-name{color:#fff;text-shadow:none}
+.project-item p{line-height:1.55;color:#ccc;margin-top:6px}
+.project-item p a{color:var(--y);text-underline-offset:3px}
+.project-item p a:hover,.project-item p a:focus-visible{color:#fff}
+.project-item.hot{background:#17130a;color:#fff}
+.project-item.hot .project-name{color:var(--y)}
+.project-item.hot .btn-wild{border-color:var(--y);color:var(--y)}
+.project-item.hot .btn-wild:hover{background:var(--y);color:#000}
+.back-to-top{display:inline-flex;align-items:center;gap:8px;margin-top:45px;padding:12px 18px;border:2px solid #222;background:var(--y);color:#111;font-weight:bold;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.back-to-top:hover,.back-to-top:focus-visible{transform:translateY(-3px);box-shadow:5px 5px 0 var(--r);outline:2px solid #111;outline-offset:3px}
+.resume-access{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(22px,4vw,36px)}
+.resume-access-copy{min-width:0}
+.resume-access-copy .resume-title{margin-top:12px}
+.resume-access .resume-actions{flex:0 0 min(340px,48%);grid-column:auto;display:flex;margin:0}
+.resume-access .resume-actions .btn-wild{flex:1}
+.resume-section{border-color:#4b4b4b;background:linear-gradient(145deg,#121212,#070707);box-shadow:8px 8px 0 #291014}
+.resume-title{font-size:clamp(2rem,6vw,3rem)}
+.resume-subtitle{line-height:1.5}
+.resume-actions{margin:0 clamp(-34px,-4vw,-20px) clamp(-34px,-4vw,-20px)}
+.resume-actions .btn-wild{padding:14px 12px}
+.assistant-widget,.assistant-widget *{cursor:auto}
+.assistant-widget button,.assistant-widget input{font:inherit}
+.assistant-launcher{position:fixed;right:24px;bottom:24px;z-index:1500;display:flex;align-items:center;gap:10px;padding:13px 18px;border:2px solid #111;border-radius:999px;background:var(--y);color:#080808;font-weight:bold;box-shadow:0 8px 28px #0009;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.assistant-launcher:hover,.assistant-launcher:focus-visible{transform:translateY(-3px);box-shadow:0 12px 34px #000b;outline:3px solid #fff;outline-offset:3px}
+.assistant-launcher svg{width:22px;height:22px;fill:currentColor}
+.assistant-panel[hidden]{display:none}
+.assistant-panel{position:fixed;right:24px;bottom:88px;z-index:1501;display:flex;flex-direction:column;width:min(390px,calc(100vw - 28px));height:min(590px,calc(100dvh - 118px));min-height:360px;overflow:hidden;border:1px solid #484848;border-radius:16px;background:#0b0b0b;color:#f5f5f5;box-shadow:0 22px 70px #000c;animation:assistant-in .18s ease-out}
+@keyframes assistant-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.assistant-header{min-height:0;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:12px;padding:16px;border:0;border-bottom:1px solid #303030;border-image:none;background:#111}
+.assistant-avatar{width:40px;height:40px;flex:none;display:grid;place-items:center;border:1px solid var(--y);border-radius:50%;color:var(--y);font-weight:bold}
+.assistant-heading{min-width:0;flex:1}
+.assistant-heading h2{font:700 1rem/1.3 var(--mono);text-transform:none}
+.assistant-heading p{color:#aaa;font-size:.75rem;margin-top:3px}
+.assistant-status{color:#9fe2a8!important}
+.assistant-status::before{content:'';display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%;background:#75d787}
+.assistant-status[data-state="fallback"]{color:#ffd27a!important}
+.assistant-status[data-state="fallback"]::before{background:#e2a84f}
+footer .contact-big{color:#8f2f1d;animation:bl 1s linear infinite;text-decoration:none}
+footer .contact-big::after{position:absolute;top:50%;right:0;left:0;height:3px;background:currentColor;content:"";transform:scaleX(0);transform-origin:center;animation:email-cut 5s ease-in-out 1s infinite}
+@keyframes email-cut{
+  0%,15%,100%{transform:scaleX(0)}
+  30%,75%{transform:scaleX(1)}
+}
+footer .contact-big:hover{color:#651d61}
+.assistant-close{width:34px;height:34px;border:1px solid #444;border-radius:50%;background:transparent;color:#fff;font-size:1.1rem;cursor:pointer}
+.assistant-close:hover,.assistant-close:focus-visible{border-color:var(--y);color:var(--y);outline:2px solid var(--y);outline-offset:2px}
+.assistant-messages{min-height:0;flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:12px;padding:16px}
+.assistant-message{flex:0 0 auto;max-width:90%;padding:12px 14px;border:1px solid #c9cdd4;border-radius:12px;background:#f2f4f7;color:#151923;font-size:.9rem;font-weight:500;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;box-shadow:0 2px 8px #0003}
+.assistant-message.user{align-self:flex-end;background:#fff2ad;border-color:#d6b74b;color:#17140b}
+.assistant-message.assistant{align-self:flex-start}
+.assistant-typing{display:flex;align-items:center;gap:5px;min-height:42px}
+.assistant-typing span{width:7px;height:7px;border-radius:50%;background:#697386;animation:assistant-dot 1s ease-in-out infinite}
+.assistant-typing span:nth-child(2){animation-delay:.15s}
+.assistant-typing span:nth-child(3){animation-delay:.3s}
+@keyframes assistant-dot{0%,60%,100%{opacity:.35;transform:translateY(0)}30%{opacity:1;transform:translateY(-4px)}}
+.assistant-contact-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+.assistant-contact-links a{border:1px solid #596272;border-radius:999px;padding:5px 8px;color:#182032;font-size:.75rem;text-decoration:none}
+.assistant-contact-links a:hover,.assistant-contact-links a:focus-visible{background:#e2e8f0;outline:2px solid #182032;outline-offset:2px}
+.assistant-suggestions{display:flex;flex-wrap:wrap;gap:7px;padding:0 16px 12px}
+.assistant-suggestion{border:1px solid #4d4d4d;border-radius:999px;background:transparent;color:#ddd;padding:7px 10px;font-size:.75rem;cursor:pointer}
+.assistant-suggestion:hover,.assistant-suggestion:focus-visible{border-color:var(--y);color:var(--y);outline:2px solid var(--y);outline-offset:2px}
+.assistant-form{display:flex;gap:8px;padding:12px;border-top:1px solid #303030}
+.assistant-form input{flex:1;min-width:0;border:1px solid #454545;border-radius:9px;background:#151515;color:#fff;padding:11px 12px;font-size:.88rem}
+.assistant-form input:focus-visible{outline:2px solid var(--y);outline-offset:2px}
+.assistant-form button{border:0;border-radius:9px;background:var(--y);color:#111;padding:0 14px;font-weight:bold;cursor:pointer}
+.assistant-form button:disabled{opacity:.55;cursor:wait}
+.assistant-note{padding:0 12px 12px;color:#888;text-align:center;font-size:.7rem;line-height:1.4}
+@media(prefers-reduced-motion:reduce){
+footer .contact-big{animation:none}
+footer .contact-big::after{animation:none;transform:scaleX(1)}
+.assistant-typing span{animation:none;opacity:1}
+}
+@media(max-width:768px){
+.resume-access{align-items:flex-start;flex-direction:column}
+.resume-access .resume-actions{width:100%;flex-basis:auto}
+.contact-big{font-size:clamp(1rem,5.4vw,3rem);letter-spacing:-.04em;white-space:nowrap;word-break:normal}
+.assistant-launcher{right:16px;bottom:16px}
+.assistant-panel{right:14px;bottom:78px;height:min(570px,calc(100dvh - 100px))}
+.assistant-header>div:first-child{margin-bottom:0!important}
+}
+@media(max-width:380px){
+.education-highlight{grid-template-columns:1fr}
+.assistant-panel{right:8px;bottom:72px;width:calc(100vw - 32px)}
+}
+@media(prefers-reduced-motion:reduce){
+.assistant-panel{animation:none}
+}
+@media(max-width:768px){
+.xp-section h2{font-size:clamp(2rem,10vw,3.5rem)!important}
+.xp-card>div{flex-direction:column;gap:10px}
+.cursor{display:none}
+*,a{cursor:auto}
+.marquee-container{font-size:clamp(1.2rem,5vw,1.8rem);margin-top:55px;margin-bottom:65px}
+.box-title{font-size:clamp(4rem,20vw,5rem)}
+.project-item:hover{transform:none}
+.project-preview-panel iframe{height:55vh;min-height:260px}
+.wrapper{padding:14px}
+header{min-height:0;padding:28px 0 26px}
+header>div:first-child{margin-bottom:42px!important}
+.alert-line{font-size:.78rem;letter-spacing:.06em;padding:7px 9px}
+.glitch-text{font-size:clamp(3.6rem,18vw,7rem);overflow-wrap:anywhere}
+.sub-hero{font-size:clamp(.9rem,4.2vw,1.35rem);max-width:100%;overflow-wrap:anywhere}
+.hero-actions{width:100%}
+.hero-action{flex:1 1 130px;text-align:center}
+.signal-strip{gap:7px}
+.signal-chip{font-size:.72rem}
+.chaos-box{padding:36px 24px}
+.xp-section{padding:75px 18px;clip-path:polygon(0 2%,100% 0,100% 98%,0 100%)}
+.xp-card{padding:22px;border-width:3px}
+.xp-card h3{font-size:clamp(1.7rem,8vw,2.5rem)!important}
+.folder{margin:65px 0}
+.folder-tab{font-size:1rem;padding:9px 14px;max-width:100%}
+.project-item{padding:28px 14px}
+.project-name{font-size:clamp(1.7rem,8vw,2.5rem);overflow-wrap:anywhere}
+.project-actions{width:100%}
+.project-actions .btn-wild{flex:1 1 130px;text-align:center;padding:12px 10px}
+footer{padding:70px 16px}
+.contact-big{font-size:clamp(1.6rem,8vw,3.5rem)}
+.resume-section{margin:65px 0;box-shadow:5px 5px 0 var(--r)}
+.resume-actions{margin:0 -20px -20px}
+.resume-access .resume-actions{margin:0}
+.resume-actions .btn-wild{padding:14px 8px}
+.resume-viewer{padding:8px}
+.resume-viewer-panel{height:88vh}
+}
+@media(max-width:380px){
+.glitch-text{font-size:clamp(3rem,16vw,4rem)}
+.chaos-box{padding:30px 18px}
+.project-actions .btn-wild{flex-basis:100%}
+}
+@media(max-width:768px){
+.contact-big{font-size:clamp(.85rem,5.2vw,2.4rem);letter-spacing:-.04em;white-space:nowrap;word-break:normal}
+}
+@media(max-width:480px){
+.chaos-box{min-width:0;padding:28px 16px}
+.box-content h2{font-size:clamp(1.65rem,8vw,2.15rem)!important;overflow-wrap:anywhere}
+.box-content p,.skill-note,.project-item p{overflow-wrap:anywhere}
+.xp-section{padding:64px 14px}
+.xp-section h2{font-size:clamp(1.55rem,8.5vw,2.6rem)!important;overflow-wrap:anywhere}
+.xp-card{padding:18px}
+.xp-card ul{padding-left:18px;font-size:1rem!important}
+.project-item{min-width:0}
+.project-name{max-width:100%}
+.project-actions .btn-wild{min-width:0;overflow-wrap:anywhere}
+.assistant-panel{right:8px;bottom:72px;width:calc(100vw - 24px)}
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="scanlines"></div>
+
+<div class="wrapper">
+
+<header id="top">
+  <div style="margin-bottom:50px">
+    <span class="alert-line">RIJAN ARYAL · WEB DEVELOPER</span><br><br>
+    <span class="blink">[ OPEN TO INTERNSHIPS & PROJECTS ]</span><br>
+    <span>LOC: NEPAL</span>
+    <div style="margin-top:10px;display:flex;gap:20px;font-size:1.2rem;flex-wrap:wrap">
+      <a class="tag" href="https://www.linkedin.com/in/rijan-aryal-1162163a8" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+      <a class="tag" href="https://github.com/Rijanaryal" target="_blank" rel="noopener noreferrer">GITHUB</a>
+    </div>
+  </div>
+  <p class="danger-note">NO TEMPLATES. NO DESIGN. JUST BUILD.</p>
+  <h1 class="glitch-text" data-text="RIJAN">RIJAN</h1>
+  <h1 class="glitch-text" data-text="ARYAL">ARYAL <span style="color:orangered">//</span></h1>
+  <div class="sub-hero">
+    &lt; WEB_DEVELOPER /&gt;<br>
+    <span style="color:orangered">FRONTEND // BACKEND // CREATIVE CODE</span>
+  </div>
+  <div class="hero-actions">
+    <a class="hero-action" href="#projects">EXPLORE PROJECTS ↓</a>
+    <a class="hero-action" href="mailto:aryalreejan87@gmail.com">CONTACT ME ↗</a>
+  </div>
+  <div class="signal-strip" aria-label="Portfolio highlights">
+    <span class="signal-chip">BSc CSIT · ASCOL</span>
+    <span class="signal-chip">6 SELECTED PROJECTS</span>
+    <span class="signal-chip">KATHMANDU, NEPAL</span>
+  </div>
+</header>
+
+<div class="marquee-container">
+  <div class="marquee-inner">BUILDING FOR THE WEB +++ LEARNING BY MAKING +++ BSc CSIT · ASCOL +++ FROM IDEAS TO USEFUL PRODUCTS +++</div>
+</div>
+
+<section class="grid-chaos">
+  <div class="chaos-box">
+    <div class="box-title">01</div>
+    <div class="box-content">
+      <h2 style="font-size:2.5rem">ABOUT ME</h2>
+      <p style="margin-top:20px;font-size:1.1rem">I’m a BSc CSIT student at Amrit Science Campus (ASCOL), building practical web projects and growing my skills across frontend and backend development. I enjoy turning ideas into clear, useful digital experiences and learning by shipping real work.</p>
+    </div>
+  </div>
+  <div class="chaos-box">
+    <div class="box-title">02</div>
+    <div class="box-content">
+      <h2 style="font-size:2.5rem">TECH STACK</h2>
+      <ul>
+        <li>JavaScript</li><li>Python</li><li>C</li><li>PHP</li>
+        <li>HTML &amp; CSS</li><li>React</li><li>Next.js</li><li>Node.js</li>
+        <li>Tailwind CSS</li><li>Three.js</li><li>MySQL &amp; SQL</li>
+        <li>Git &amp; GitHub</li><li>Figma</li>
+      </ul>
+      <p class="skill-note">Currently learning: TypeScript, MongoDB, data structures and algorithms, and backend development.</p>
+    </div>
+  </div>
+  <div class="chaos-box">
+    <div class="box-title">03</div>
+    <div class="box-content">
+      <h2 style="font-size:2.5rem">EDUCATION</h2>
+      <p style="margin-top:20px;font-size:1.1rem"><strong>BSc CSIT</strong><br>Amrit Science Campus (ASCOL)<br>Tribhuvan University · 2026–present</p>
+      <div class="education-highlight">
+        <span>NEB Grade XII GPA<br><strong>3.74</strong></span>
+      </div>
+      <p class="skill-note">Science · NIST College, Kathmandu</p>
+    </div>
+  </div>
+</section>
+
+<div class="xp-section">
+  <h2 style="font-size:4rem;margin-bottom:35px;text-align:right">BUILDING IN PUBLIC</h2>
+  <div class="xp-card">
+    <div style="display:flex;justify-content:space-between;border-bottom:2px solid;padding-bottom:10px;flex-wrap:wrap;gap:10px">
+      <h3 style="font-size:2.5rem;font-family:var(--main)">TAAJA BAZAR</h3>
+      <span style="font-size:1.5rem">FEATURED PROJECT</span>
+    </div>
+    <p style="margin-top:15px;font-weight:bold;font-size:1.1rem">FOUNDER / DEVELOPER · PERSONAL PROJECT</p>
+    <ul style="margin-top:10px;padding-left:20px;font-size:1.2rem">
+      <li>Designed and built the Taaja Bazar website end to end.</li>
+      <li>A web platform bringing fresh, local produce online.</li>
+    </ul>
+  </div>
+  <div class="xp-card">
+    <h3 style="font-size:1.5rem;font-family:var(--main)">WHAT I’M LOOKING FOR</h3>
+    <p style="margin-top:10px;line-height:1.6">I’m open to internships, student developer roles, and project-based opportunities where I can contribute, learn from a team, and keep growing as a software developer.</p>
+  </div>
+</div>
+
+<section class="folder" id="projects">
+  <div class="folder-tab">SELECTED PROJECTS</div>
+
+  <div class="project-item hot" data-image="">
+    <div>
+      <div class="project-name">TAAJA BAZAR 🥬</div>
+      <p>A fresh-produce marketplace web platform, designed and built end to end.</p>
+    </div>
+    <span style="font-size:2.5rem">★ ★ ★</span>
+    <div class="project-actions">
+      <button type="button" class="btn-wild preview-toggle" aria-expanded="false">PREVIEW SITE</button>
+      <a href="https://taajabazar.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-wild">VISIT SITE</a>
+      <a href="https://github.com/Rijanaryal?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-wild">VIEW SOURCE</a>
+    </div>
+    <div class="project-preview-panel">
+      <p>LIVE PREVIEW — IF THE SITE BLOCKS EMBEDDING, USE VISIT SITE.</p>
+      <iframe title="Taaja Bazar live preview" data-src="https://taajabazar.netlify.app/" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+
+  <div class="project-item" data-image="">
+    <div>
+      <div class="project-name">SWAADCUP</div>
+      <p>Explore SwaadCup, one of my web projects.</p>
+    </div>
+    <div class="project-actions">
+      <button type="button" class="btn-wild preview-toggle" aria-expanded="false">PREVIEW SITE</button>
+      <a href="https://swaadcup.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-wild">VISIT SITE</a>
+      <a href="https://github.com/Rijanaryal?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-wild">VIEW SOURCE</a>
+    </div>
+    <div class="project-preview-panel">
+      <p>LIVE PREVIEW — IF THE SITE BLOCKS EMBEDDING, USE VISIT SITE.</p>
+      <iframe title="SwaadCup live preview" data-src="https://swaadcup.netlify.app/" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+
+  <div class="project-item" data-image="">
+    <div>
+      <div class="project-name">HAAT</div>
+      <p>Explore Haat, one of my web projects.</p>
+    </div>
+    <div class="project-actions">
+      <button type="button" class="btn-wild preview-toggle" aria-expanded="false">PREVIEW SITE</button>
+      <a href="https://haat.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-wild">VISIT SITE</a>
+      <a href="https://github.com/Rijanaryal?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-wild">VIEW SOURCE</a>
+    </div>
+    <div class="project-preview-panel">
+      <p>LIVE PREVIEW — IF THE SITE BLOCKS EMBEDDING, USE VISIT SITE.</p>
+      <iframe title="Haat live preview" data-src="https://haat.netlify.app/" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+
+  <article class="project-item">
+    <div>
+      <div class="project-name">ELECTRO-BAZZAR</div>
+      <p>E-commerce-style project built with PHP, MySQL, HTML, CSS, and XAMPP.</p>
+    </div>
+    <div class="project-actions">
+      <a href="https://github.com/Rijanaryal?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-wild">BROWSE PROJECTS</a>
+    </div>
+  </article>
+
+  <article class="project-item">
+    <div>
+      <div class="project-name">ASCOL CSIT HUB</div>
+      <p>A project for the ASCOL CSIT community: <a href="https://ascol-csit-hub.vercel.app/" target="_blank" rel="noopener noreferrer">ascol-csit-hub.vercel.app</a></p>
+    </div>
+    <div class="project-actions">
+      <button type="button" class="btn-wild preview-toggle" aria-expanded="false">PREVIEW SITE</button>
+      <a href="https://ascol-csit-hub.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-wild">VISIT PROJECT</a>
+      <a href="https://github.com/Rijanaryal?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-wild">VIEW SOURCE</a>
+    </div>
+    <div class="project-preview-panel">
+      <p>LIVE PREVIEW — IF THE SITE BLOCKS EMBEDDING, USE VISIT PROJECT.</p>
+      <iframe title="ASCOL CSIT Hub live preview" data-src="https://ascol-csit-hub.vercel.app/" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </article>
+
+  <article class="project-item">
+    <div>
+      <div class="project-name">NEPALGPT</div>
+      <p>A Nepal-focused AI/chat application concept using Python and FastAPI.</p>
+    </div>
+    <div class="project-actions">
+      <a href="https://github.com/Rijanaryal?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-wild">BROWSE PROJECTS</a>
+    </div>
+  </article>
+</section>
+
+<section class="resume-section" id="resume" aria-label="Resume">
+  <div class="resume-access">
+    <div class="resume-access-copy">
+      <span class="resume-kicker">// CURRICULUM VITAE</span>
+      <h2 class="resume-title">RIJAN ARYAL</h2>
+      <p class="resume-subtitle">View or download my resume.</p>
+    </div>
+    <div class="resume-actions">
+      <button type="button" class="btn-wild" id="view-resume" aria-haspopup="dialog">◉ VIEW RESUME</button>
+      <a class="btn-wild" href="rijan-aryal-resume.pdf" download="Rijan-Aryal-Resume.pdf">↓ DOWNLOAD PDF</a>
+    </div>
+  </div>
+</section>
+
+<div class="resume-viewer" id="resume-viewer" role="dialog" aria-modal="true" aria-label="Resume PDF viewer" hidden>
+  <div class="resume-viewer-panel">
+    <div class="resume-viewer-bar">
+      <span>RIJAN ARYAL // RESUME.PDF</span>
+      <button type="button" id="close-resume" aria-label="Close resume">CLOSE ×</button>
+    </div>
+    <iframe title="Rijan Aryal resume PDF" src="rijan-aryal-resume.pdf#toolbar=1"></iframe>
+  </div>
+</div>
+
+<footer>
+  <p>NEXT CHAPTER</p>
+  <h2 style="font-size:1.5rem;margin:40px 0">LET’S BUILD SOMETHING USEFUL.</h2>
+  <a href="mailto:aryalreejan87@gmail.com" class="contact-big blink">aryalreejan87@gmail.com</a>
+  <p style="margin-top:20px">PHONE: <a href="tel:+9779764514855" style="color:inherit">9764514855</a></p>
+  <div style="margin-top:50px;display:flex;justify-content:center;gap:20px;font-size:1.5rem;flex-wrap:wrap">
+    <a class="tag" href="https://www.linkedin.com/in/rijan-aryal-1162163a8" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+    <a class="tag" href="https://github.com/Rijanaryal" target="_blank" rel="noopener noreferrer">GITHUB</a>
+  </div>
+  <a class="back-to-top" href="#top" aria-label="Back to the top of the page">↑ BACK TO TOP</a>
+</footer>
+
+</div>
+
+<div class="assistant-widget">
+  <button class="assistant-launcher" id="assistant-launcher" type="button" aria-expanded="false" aria-controls="assistant-panel" aria-label="Ask Rijan's portfolio assistant">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.5 14l-1 4 4.1-1.1A9 9 0 1 0 12 3Zm0 2a7 7 0 1 1-3.6 13l-.5-.3-1.8.5.5-1.8-.3-.5A7 7 0 0 1 12 5Zm-3.2 5.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm3.2 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm3.2 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/></svg>
+    <span>Ask about me</span>
+  </button>
+  <section class="assistant-panel" id="assistant-panel" role="dialog" aria-labelledby="assistant-title" aria-modal="false" hidden>
+    <header class="assistant-header">
+      <div class="assistant-avatar" aria-hidden="true">RA</div>
+      <div class="assistant-heading">
+        <h2 id="assistant-title">Rijan’s AI Assistant</h2>
+        <p class="assistant-status" id="assistant-status" data-state="ready">Portfolio assistant · messages aren’t saved</p>
+      </div>
+      <button class="assistant-close" id="assistant-close" type="button" aria-label="Close chat">×</button>
+    </header>
+    <div class="assistant-messages" id="assistant-messages" role="log" aria-live="polite" aria-relevant="additions text">
+      <div class="assistant-message assistant">Hi! I’m Rijan’s portfolio assistant. Ask who he is, what he has built, about his skills or studies, or how to contact him. I answer from his portfolio information.</div>
+    </div>
+    <div class="assistant-suggestions" id="assistant-suggestions">
+      <button class="assistant-suggestion" type="button">Who is Rijan?</button>
+      <button class="assistant-suggestion" type="button">What has he built?</button>
+      <button class="assistant-suggestion" type="button">How can I contact him?</button>
+    </div>
+    <form class="assistant-form" id="assistant-form">
+      <input id="assistant-input" name="message" type="text" maxlength="500" placeholder="Ask me anything…" autocomplete="off" aria-label="Your message" required>
+      <button id="assistant-send" type="submit">Send</button>
+    </form>
+    <p class="assistant-note">AI replies use verified portfolio details. Conversations are temporary and not stored.</p>
+  </section>
+</div>
+
+<script>
+const cursor=document.getElementById('cursor');
+document.addEventListener('mousemove',e=>{if(cursor){cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'}});
+document.addEventListener('mousedown',()=>{if(cursor){cursor.style.transform='translate(-50%,-50%) scale(.5)';cursor.style.background='white'}});
+document.addEventListener('mouseup',()=>{if(cursor){cursor.style.transform='translate(-50%,-50%) scale(1)';cursor.style.background='transparent'}});
+const resumeViewer=document.getElementById('resume-viewer');
+document.getElementById('view-resume').addEventListener('click',()=>{resumeViewer.hidden=false;document.getElementById('close-resume').focus()});
+document.getElementById('close-resume').addEventListener('click',()=>{resumeViewer.hidden=true;document.getElementById('view-resume').focus()});
+resumeViewer.addEventListener('click',event=>{if(event.target===resumeViewer){resumeViewer.hidden=true;document.getElementById('view-resume').focus()}});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!resumeViewer.hidden){resumeViewer.hidden=true;document.getElementById('view-resume').focus()}});
+const titles=document.querySelectorAll('.glitch-text');
+setInterval(()=>{titles.forEach(t=>{t.style.transform='translateX('+(Math.random()*4-2)+'px)'})},100);
+document.querySelectorAll('.project-item').forEach(item=>{
+  const frame=item.querySelector('.project-preview-panel iframe');
+  const toggle=item.querySelector('.preview-toggle');
+  if(!toggle)return;
+  const setPreview=(open,pinned=false)=>{
+    item.classList.toggle('preview-open',open);
+    item.dataset.previewPinned=String(open&&pinned);
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.textContent=open&&pinned?'CLOSE PREVIEW':'PREVIEW SITE';
+    if(open&&!frame.src)frame.src=frame.dataset.src;
+  };
+  item.addEventListener('mouseenter',()=>setPreview(true));
+  item.addEventListener('mouseleave',()=>{if(item.dataset.previewPinned!=='true')setPreview(false)});
+  item.addEventListener('focusin',()=>setPreview(true));
+  item.addEventListener('focusout',event=>{
+    if(!item.contains(event.relatedTarget)&&item.dataset.previewPinned!=='true')setPreview(false);
+  });
+  toggle.addEventListener('click',()=>{
+    if(item.dataset.previewPinned==='true')setPreview(false);
+    else setPreview(true,true);
+  });
+});
+const assistantLauncher=document.getElementById('assistant-launcher');
+const assistantPanel=document.getElementById('assistant-panel');
+const assistantClose=document.getElementById('assistant-close');
+const assistantForm=document.getElementById('assistant-form');
+const assistantInput=document.getElementById('assistant-input');
+const assistantSend=document.getElementById('assistant-send');
+const assistantMessages=document.getElementById('assistant-messages');
+const assistantStatus=document.getElementById('assistant-status');
+const conversation=[];
+const portfolioAnswers=[
+  {match:/\b(contact|phone|mobile|number|email|github|linkedin|reach)\b/,answer:"You can contact Rijan by phone at 9764514855 or email at aryalreejan87@gmail.com. His LinkedIn is https://www.linkedin.com/in/rijan-aryal-1162163a8 and his GitHub is https://github.com/Rijanaryal."},
+  {match:/\b(who is rijan|who's rijan|about rijan|tell me about (him|rijan)|introduce (him|rijan)|describe rijan)\b/,answer:"Rijan Aryal is a BSc CSIT student at Amrit Science Campus (ASCOL) in Kathmandu, Nepal, and an aspiring software developer. He builds practical web projects, including Taaja Bazar and ASCOL CSIT Hub, and is growing his frontend and backend skills. He is open to internships, student developer roles, and project-based opportunities."},
+  {match:/\b(project|built|made|created|portfolio|taaja|swaadcup|haat|electro|nepalgpt)\b/,answer:"Rijan has built Taaja Bazar, a fresh-produce marketplace, and ASCOL CSIT Hub for the ASCOL CSIT community. His other projects include SwaadCup, Haat, Electro-Bazzar (PHP/MySQL e-commerce), and NepalGPT (a Nepal-focused Python/FastAPI chat concept). Visit ASCOL CSIT Hub at https://ascol-csit-hub.vercel.app/."},
+  {match:/\b(mongodb|typescript)\b/,answer:"Rijan is currently learning TypeScript and MongoDB. His listed web stack also includes JavaScript, React, Next.js, Node.js, HTML, CSS, and Tailwind CSS."},
+  {match:/\b(skill|stack|language|program|know|technology|tech)\b/,answer:"Rijan’s listed skills include JavaScript, C, PHP, Python, HTML, CSS, React, Next.js, Node.js, Tailwind CSS, Three.js, MySQL, SQL, Git, GitHub, VS Code, and Figma. He’s currently learning TypeScript, MongoDB, data structures and algorithms, and backend development."},
+  {match:/\b(ascol csit hub|csit hub)\b/,answer:"ASCOL CSIT Hub is one of Rijan’s projects. Visit it at https://ascol-csit-hub.vercel.app/."},
+  {match:/\b(education|degree|college|university|ascol|nist|study|studying)\b/,answer:"Rijan is studying BSc CSIT at Amrit Science Campus (ASCOL), Tribhuvan University (2026–present). He completed Grade XII Science at NIST College with an NEB GPA of 3.74."},
+  {match:/\b(experience|job|work|intern|professional)\b/,answer:"This portfolio lists personal and academic projects, not professional employment. Rijan is open to internships, student developer roles, and project-based opportunities."},
+  {match:/\b(achievement|award|grade|gpa|rank|certificate)\b/,answer:"The listed academic highlight is an NEB Grade XII GPA of 3.74. No certificates or other awards are listed here."},
+  {match:/\b(goal|interest|career|future|looking for)\b/,answer:"Rijan is an aspiring software developer, interested in web development and building practical products. He’s open to internships, student developer roles, and project-based opportunities."},
+  {match:/\b(about|rijan|person|background|yourself)\b/,answer:"Rijan Aryal is a BSc CSIT student at ASCOL and an aspiring software developer from Kathmandu, Nepal. He enjoys learning by building useful web projects and is open to internships and project opportunities."},
+  {match:/\b(hi|hello|hey|greetings)\b/,answer:"Hi! Ask me about Rijan’s education, technical skills, projects, academic highlights, or the opportunities he’s looking for."}
+];
+const addAssistantMessage=(text,kind)=>{
+  const message=document.createElement('div');
+  message.className='assistant-message '+kind;
+  const links=[
+    ['https://www.linkedin.com/in/rijan-aryal-1162163a8','https://www.linkedin.com/in/rijan-aryal-1162163a8'],
+    ['https://github.com/Rijanaryal','https://github.com/Rijanaryal'],
+    ['https://ascol-csit-hub.vercel.app/','https://ascol-csit-hub.vercel.app/'],
+    ['https://taajabazar.netlify.app/','https://taajabazar.netlify.app/'],
+    ['9764514855','tel:+9779764514855'],
+    ['aryalreejan87@gmail.com','mailto:aryalreejan87@gmail.com']
+  ];
+  const escapedLinks=links.map(([label,href])=>({label,href})).sort((a,b)=>b.label.length-a.label.length);
+  const pattern=new RegExp(escapedLinks.map(({label})=>label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'gi');
+  let offset=0;
+  for(const match of text.matchAll(pattern)){
+    const label=match[0];
+    const link=escapedLinks.find(item=>item.label.toLowerCase()===label.toLowerCase());
+    message.append(document.createTextNode(text.slice(offset,match.index)));
+    const anchor=document.createElement('a');
+    anchor.href=link.href;
+    anchor.textContent=label;
+    if(link.href.startsWith('https://')){anchor.target='_blank';anchor.rel='noopener noreferrer'}
+    message.append(anchor);
+    offset=match.index+label.length;
+  }
+  message.append(document.createTextNode(text.slice(offset)));
+  if(kind==='assistant'&&/\b(contact|phone|mobile|number|email|github|linkedin|reach)\b/i.test(text)){
+    const contacts=document.createElement('div');
+    contacts.className='assistant-contact-links';
+    [['Call Rijan','tel:+9779764514855'],['Email','mailto:aryalreejan87@gmail.com'],['LinkedIn','https://www.linkedin.com/in/rijan-aryal-1162163a8'],['GitHub','https://github.com/Rijanaryal']].forEach(([label,href])=>{
+      const anchor=document.createElement('a');
+      anchor.href=href;
+      anchor.textContent=label;
+      if(href.startsWith('https://')){anchor.target='_blank';anchor.rel='noopener noreferrer'}
+      contacts.append(anchor);
+    });
+    message.append(contacts);
+  }
+  assistantMessages.append(message);
+  assistantMessages.scrollTop=assistantMessages.scrollHeight;
+  return message;
+};
+const showAssistantTyping=()=>{
+  const indicator=document.createElement('div');
+  indicator.className='assistant-message assistant assistant-typing';
+  indicator.setAttribute('role','status');
+  indicator.setAttribute('aria-label','Rijan’s assistant is typing');
+  for(let i=0;i<3;i++)indicator.append(document.createElement('span'));
+  assistantMessages.append(indicator);
+  assistantMessages.scrollTop=assistantMessages.scrollHeight;
+  return indicator;
+};
+const localPortfolioAnswer=question=>{
+  const match=portfolioAnswers.find(item=>item.match.test(question.toLowerCase()));
+  return match?match.answer:"I don’t have verified information about that yet. I can help with Rijan’s education, skills, projects, academic highlights, and career interests.";
+};
+const setAssistantOpen=open=>{
+  assistantPanel.hidden=!open;
+  assistantLauncher.setAttribute('aria-expanded',String(open));
+  if(open)assistantInput.focus();
+  else assistantLauncher.focus();
+};
+assistantLauncher.addEventListener('click',()=>setAssistantOpen(assistantPanel.hidden));
+assistantClose.addEventListener('click',()=>setAssistantOpen(false));
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&!assistantPanel.hidden)setAssistantOpen(false);
+});
+document.querySelectorAll('.assistant-suggestion').forEach(button=>{
+  button.addEventListener('click',()=>{
+    assistantInput.value=button.textContent;
+    assistantForm.requestSubmit();
+  });
+});
+assistantForm.addEventListener('submit',async event=>{
+  event.preventDefault();
+  const question=assistantInput.value.trim();
+  if(!question||assistantSend.disabled)return;
+  assistantInput.value='';
+  addAssistantMessage(question,'user');
+  conversation.push({role:'user',text:question});
+  assistantSend.disabled=true;
+  assistantInput.disabled=true;
+  assistantStatus.textContent='Thinking…';
+  const typing=showAssistantTyping();
+  const replyStarted=Date.now();
+  try{
+    const response=await fetch('/api/chat',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({messages:conversation.slice(-8)})
+    });
+    if(!response.ok)throw new Error('Portfolio AI endpoint returned '+response.status);
+    const result=await response.json();
+    if(typeof result.reply!=='string'||!result.reply.trim())throw new Error('Portfolio AI returned an empty reply');
+    await new Promise(resolve=>setTimeout(resolve,Math.max(0,500-(Date.now()-replyStarted))));
+    conversation.push({role:'model',text:result.reply});
+    typing.remove();
+    addAssistantMessage(result.reply,'assistant');
+    assistantStatus.dataset.state='ready';
+    assistantStatus.textContent='Gemini assistant · messages aren’t saved';
+  }catch(error){
+    console.warn('Using verified portfolio answers because the AI service is unavailable.',error);
+    const answer=localPortfolioAnswer(question);
+    await new Promise(resolve=>setTimeout(resolve,Math.max(0,500-(Date.now()-replyStarted))));
+    conversation.push({role:'model',text:answer});
+    typing.remove();
+    addAssistantMessage(answer,'assistant');
+    assistantStatus.dataset.state='fallback';
+    assistantStatus.textContent='Portfolio mode · AI service unavailable';
+  }finally{
+    assistantSend.disabled=false;
+    assistantInput.disabled=false;
+    assistantInput.focus();
+  }
+});
+</script>
+</body>
+</html>
